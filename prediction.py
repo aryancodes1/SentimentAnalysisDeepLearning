@@ -37,7 +37,7 @@ model.compile(
     loss=tf.keras.losses.sparse_categorical_crossentropy,
     metrics=["accuracy"],
 )
-
+model.summary()
 win = Tk()
 win.title("Review Analysis")
 var = StringVar(win)
